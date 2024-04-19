@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FONTAINE</title>
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="icon" href="assets/image/circle.png">
+</head>
+<body>
+  <!-- Video latar belakang -->
+  <video class="bgVideo" muted loop width="2500">
+    <source src="assets/video/video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div class="main">
+    <div class="content">
+      <div class="text">
+        <!-- Judul dan subjudul -->
+        <h1>Fountain of Belleau</h1>
+        <h3>Chanson of Justice and Impartiality</h3>
+      </div>
+      <div class="tombol">
+        <!-- Tombol putar dan jeda -->
+        <img class= "gambar" src="assets/image/circle.png" width="150">
+        <div class="toggle">
+          <img class="play" src="assets/image/play.png" width="80px" height="80px" onclick="play()">
+          <img class="pause" src="assets/image/pause.png" width="80px" height="80px" onclick="pause()">
+        </div>
+      </div>
+      <div class="progressdiv">
+        <div class="bar" id="progress">
+          <!-- Slider kemajuan -->
+          <input type="range" id="progressBar" min="0" max="100" value="0" step="1" onchange="changeProgress()">
+        </div>
+        <!-- Kontrol volume -->
+        <img src="assets/image/volume.png" width="30">
+        <div class="suara">
+          <input type="range" id="volumeControl" min="0" max="1" step="0.01" value="1" onchange="changeVolume()">
+        </div>
+      </div>
+      <!-- Audio -->
+      <audio src="assets/audio/Fontaine.mp3" type="audio/mpeg"></audio>
+    </div>
+  </div>
+  <script src="script/script.js"></script>
+</body>
+</html>

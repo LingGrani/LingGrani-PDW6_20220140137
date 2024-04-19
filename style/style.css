@@ -1,0 +1,116 @@
+
+body {
+  font-family: Arial, Helvetica, sans-serif; /* Jenis font yang akan digunakan */
+  margin: 0; /* Nol margin */
+  padding: 0; /* Nol padding */
+  color: aliceblue; /* Warna teks */
+  text-shadow: 
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000; /* Efek stroke untuk teks */
+  overflow: hidden; /* Sembunyikan overflow konten */
+}
+
+img {
+  opacity: 0.9; /* Membuat gambar sedikit transparan */
+}
+
+.text {
+  padding: 10px; 
+  border-radius: 50px; 
+  background-color: rgba(224, 244, 255, 0.5);
+  border: 2px solid rgb(74, 74, 74);
+}
+
+h1, h3 {
+  margin: 0; /* Nol margin */
+}
+
+h1 {
+  font-weight: 900; /* Tebal font */
+}
+
+.main {
+  display: flex; /* Flexbox layout */
+  position: absolute; /* Posisi absolut */
+  justify-content: center; /* Tengahkan konten horizontal */
+  align-items: center; /* Tengahkan konten vertikal */
+  width: 100%; /* Lebar 100% */
+  height: 100%; /* Tinggi 100% */
+}
+
+.content {
+  text-align: center; /* Tengahkan teks */
+}
+
+.tombol {
+  display: flex; /* Flexbox layout */
+  position: relative; /* Posisi relatif */
+  justify-content: center; /* Tengahkan konten horizontal */
+  margin-top: 500px; /* Jarak atas */
+  margin-bottom: 20px; /* Jarak bawah */
+}
+
+.gambar {
+  opacity: 1; /* Opaque */
+  display: flex; /* Flexbox layout */
+  justify-content: center; /* Tengahkan konten horizontal */
+  align-items: center; /* Tengahkan konten vertikal */
+  margin: 0 auto; /* Tengahkan gambar secara horizontal */
+}
+
+.toggle {
+  position: absolute; /* Posisi absolut */
+  display: flex; /* Flexbox layout */
+  justify-content: center; /* Tengahkan konten horizontal */
+  align-items: center; /* Tengahkan konten vertikal */
+  width: 120px; /* Lebar 120px */
+  top: 50%; /* Atur di bagian tengah vertikal */
+  left: 50%; /* Atur di bagian tengah horizontal */
+  transform: translate(-50%, -50%); /* Pusatkan elemen */
+  height: 120px; /* Tinggi 120px */
+}
+
+.play {
+  display: block;
+}
+
+.pause {
+  display: none;
+}
+
+.bgVideo {
+  position: fixed;
+  height: 100%;
+  height: auto;
+}
+
+.progressdiv {
+  display: flex; /* Flexbox layout */
+  justify-content: center; /* Tengahkan konten horizontal */
+  align-items: center; /* Tengahkan konten vertikal */
+  padding: 10px; /* Jarak padding */
+  border-radius: 10px; /* Bentuk border */
+  background-color: rgba(224, 244, 255, 0.5); /* Warna latar belakang dengan opasitas */
+  border: 2px solid rgb(74, 74, 74); /* Border dengan warna solid */
+}
+
+.bar {
+  padding-right: 75px;
+}
+
+input[type="range"] {
+  appearance: none; /* Nonaktifkan style default */
+  background: aliceblue; /* Warna latar belakang */
+}
+input[type="range"]::-webkit-slider-thumb { /* Ubah pegangan */
+  appearance: none; /* Nonaktifkan style default */
+  width: 20px; /* Lebar 20px */
+  height: 20px; /* Tinggi 20px */
+  border-radius: 50%; /* Bentuk lingkaran */
+  background: #515151; /* Warna thumb */
+}
+.bar input[type="range"] {
+  width: 500px; /* Panjang input range */
+}
